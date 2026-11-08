@@ -1,22 +1,176 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EAT MORE</title>
+
+    <title>Mr Wiseman Enterprise | Fashion Store</title>
+
     <link rel="stylesheet" href="/index.css">
 </head>
+
 <body>
-    
-    <header>
-        <span>Eat MORE</span>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+
+<header>
+    <div class="logo">MR WISEMAN ENTERPRISE</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Dress Smart.<br>
+        <span>Look Different.</span></h1>
+
+        <p>
+            Discover stylish, elegant and modern fashion
+            designed to make every moment special.
+        </p>
+
+        <a href="#shop" class="btn">SHOP NOW</a>
+    </div>
+</section>
+
+<section id="categories">
+    <div class="section-title">
+        <h2>Our Collections</h2>
+        <p>Explore fashion that matches your personality.</p>
+    </div>
+
+    <div class="categories">
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=700" alt="Men's fashion">
+            <h3>Men's Fashion</h3>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700" alt="Women's fashion">
+            <h3>Women's Fashion</h3>
+        </div>
+
+        <div class="category">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Shoes">
+            <h3>Shoes & Sneakers</h3>
+        </div>
+
+    </div>
+</section>
+
+<section class="products" id="shop">
+    <div class="section-title">
+        <h2>Featured Products</h2>
+        <p>Discover our latest fashion collection.</p>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700" alt="Classic T-shirt">
+            <div class="product-info">
+                <h3>Classic T-Shirt</h3>
+                <p class="price">KSh 1,200</p>
+                <button class="btn" onclick="addToCart('Classic T-Shirt',1200)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=700" alt="Designer jeans">
+            <div class="product-info">
+                <h3>Designer Jeans</h3>
+                <p class="price">KSh 2,500</p>
+                <button class="btn" onclick="addToCart('Designer Jeans',2500)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700" alt="Premium sneakers">
+            <div class="product-info">
+                <h3>Premium Sneakers</h3>
+                <p class="price">KSh 3,500</p>
+                <button class="btn" onclick="addToCart('Premium Sneakers',3500)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=700" alt="Fashion jacket">
+            <div class="product-info">
+                <h3>Fashion Jacket</h3>
+                <p class="price">KSh 4,000</p>
+                <button class="btn" onclick="addToCart('Fashion Jacket',4000)">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="about">
+
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900" alt="Fashion store">
+
+        <div class="about-text">
+            <h2>About Mr Wiseman Enterprise</h2>
+
+            <p>
+                Mr Wiseman Enterprise is a fashion brand
+                dedicated to style, confidence and quality.
+            </p>
+
+            <p>
+                Our goal is to bring modern fashion closer
+                to everyone. We believe looking good should
+                be part of everyday life.
+            </p>
+
+            <a href="#contact" class="btn">CONTACT US</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="promo">
+    <h2>Upgrade Your Style Today</h2>
+    <p>Your fashion journey starts here.</p>
+    <a href="#shop" class="btn">EXPLORE COLLECTION</a>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you.</p>
+    </div>
+
+    <div class="contact-box">
+        <h2>MR WISEMAN ENTERPRISE</h2>
+        <p>Fashion. Quality. Confidence.</p>
+
+        <p>Phone:
+            <a href="tel:0140723249">0140723249</a>
+        </p>
+
+        <a href="tel:0140723249" class="btn">CALL NOW</a>
+    </div>
+</section>
+
+<footer>
+    <h3>MR WISEMAN ENTERPRISE</h3>
+    <p>© 2026 All Rights Reserved.</p>
+    <p>Designed for Style & Excellence</p>
+</footer>
+
+<button class="cart" onclick="showCart()">
+    🛒 Cart (<span id="cart-count">0</span>)
+</button>
+
+<script src="index.js"></script>
 
 </body>
 </html>
